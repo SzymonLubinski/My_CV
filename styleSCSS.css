@@ -15,6 +15,7 @@ body {
   display: flex;
   box-sizing: border-box;
   height: 100%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -113,7 +114,6 @@ main #home div.home-one p.p-first {
 main #home div.home-one p.p-second {
   font-size: 2vw;
   margin-left: 2vw;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 main #home div.home-one p.p-second span#typing-text {
   border-bottom: 3px solid #194775;
@@ -133,7 +133,7 @@ main #about {
 }
 main #about div.about-one {
   text-align: center;
-  margin: 10vh auto;
+  margin: 10vh 10vw;
 }
 main #about div.about-two {
   display: flex;
@@ -178,7 +178,6 @@ main #technology div.tech-container div.tech-one ul.tech-list {
   transform-style: preserve-3d;
 }
 main #technology div.tech-container div.tech-one ul.tech-list li.item-box {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   position: relative;
   background-color: white;
   height: 150px;
@@ -235,7 +234,6 @@ main #hobby div.hobby-one {
   position: relative;
   width: 35%;
   margin: 10px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 main #hobby div.hobby-one div.overview {
   position: absolute;

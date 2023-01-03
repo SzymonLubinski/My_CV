@@ -25,7 +25,7 @@ VanillaTilt.init(
 
 let cursor = document.getElementById('cursor');
 let textLocation = document.getElementById('typing-text');
-let sentences = ['a beginner programmer', 'IT enthusiast', 'a graduate of the University of Rzeszów', 'passionate about history'];
+let sentences = ['a beginner programmer.', 'an IT enthusiast.', 'a graduate of the University of Rzeszów.', 'passionate about history.'];
 function choosing (elList){
     cursor.classList.remove('cursor-animation');
     writer(0, elList)

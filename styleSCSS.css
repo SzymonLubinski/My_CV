@@ -51,6 +51,7 @@ nav .profile .media-ul li .social-img {
 }
 nav ul.menu {
   padding: 0;
+  margin-bottom: 0;
 }
 nav ul.menu li {
   list-style: none;

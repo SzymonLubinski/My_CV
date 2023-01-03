@@ -1,0 +1,392 @@
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+nav {
+  background-color: #262626;
+  width: 20%;
+}
+nav .profile {
+  margin: 5vh auto 0 auto;
+  text-align: center;
+}
+nav .profile p {
+  color: #E9E9E9;
+  text-align: center;
+  margin: 10%;
+  font-size: 4vh;
+  font-family: "Grape Nuts", cursive;
+}
+nav .profile .profile-img {
+  width: 60%;
+  border-radius: 50%;
+  border: 0.6vmax solid #194775;
+}
+nav .profile .media-ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 5%;
+}
+nav .profile .media-ul li {
+  width: 4vw;
+}
+nav .profile .media-ul li .social-img {
+  width: 100%;
+}
+nav ul.menu {
+  padding: 0;
+}
+nav ul.menu li {
+  list-style: none;
+  height: 7vh;
+  margin-top: 2px;
+}
+nav ul.menu li button {
+  background-color: #262626;
+  color: #E9E9E9;
+  border: 0;
+  width: 100%;
+  height: 85%;
+  padding: 5px;
+  box-shadow: inset 0 0 0 0 #E9E9E9;
+  transition: 0.3s ease-in-out;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+}
+nav ul.menu li button div.btn-group {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+nav ul.menu li button div.btn-group img {
+  height: 4vh;
+}
+nav ul.menu li button div.btn-group p {
+  padding-left: 1em;
+  margin: 0;
+}
+nav ul.menu li button:hover, nav ul.menu li .turn-on {
+  box-shadow: inset 100vw 0 0 0 #194775;
+}
+
+main {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main #home {
+  background-image: url("pictures/park.jpg");
+  background-position: right;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+main #home div.home-one {
+  text-align: left;
+  margin-top: 10vh;
+  color: white;
+}
+main #home div.home-one p.p-first {
+  font-size: 6vw;
+  margin: 1vw;
+}
+main #home div.home-one p.p-second {
+  font-size: 2vw;
+  margin-left: 2vw;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+main #home div.home-one p.p-second span#typing-text {
+  border-bottom: 3px solid #194775;
+  align-items: center;
+  gap: 5px;
+}
+main #home div.home-one p.p-second span.cursor-color {
+  color: #194775;
+}
+main #home div.home-one p.p-second span.cursor-animation {
+  animation: cursor-blink 0.5s steps(2) infinite;
+}
+main #about {
+  background-color: #e5f4fd;
+  height: 100%;
+  width: 100%;
+}
+main #about div.about-one {
+  text-align: center;
+  margin: 10vh auto;
+}
+main #about div.about-two {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+main #about div.about-two .about-half {
+  width: 50%;
+  padding: 1vw;
+}
+main #about div.about-two img.about-half {
+  max-width: 30vh;
+  padding: 0;
+  border: 5px solid #194775;
+}
+main #technology {
+  background-color: #cce9fb;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+main #technology div.tech-container {
+  height: 80vh;
+  margin-top: 5vh;
+  display: grid;
+}
+main #technology div.tech-container h1 {
+  margin-bottom: 0;
+}
+main #technology div.tech-container p {
+  margin: 0;
+}
+main #technology div.tech-container div.tech-one ul.tech-list {
+  margin-top: 3vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+main #technology div.tech-container div.tech-one ul.tech-list li.item-box {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: white;
+  height: 150px;
+  width: 120px;
+  margin: 20px;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+main #technology div.tech-container div.tech-one ul.tech-list li.item-box img.tech {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+}
+main #technology div.tech-container div.tech-one ul.tech-list li.item-box:hover img.tech {
+  transform: translate3d(-50%, -50%, 90px) rotate(0deg);
+}
+main #technology div.tech-container div.tech-one ul.tech-list li.item-box p.title {
+  margin-top: 20px;
+  width: 100%;
+  opacity: 0.5;
+  transform-style: preserve-3d;
+  transform: translate3d(0, -50px, 50px);
+  text-align: center;
+}
+main #technology div.tech-container div.tech-one ul.tech-list li.item-box:hover p.title {
+  opacity: 1;
+  background-color: #194775;
+  color: #E9E9E9;
+}
+main #hobby {
+  background-color: #e5f4fd;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+main #hobby h1 {
+  margin: 2vh auto 2vh auto;
+}
+main #hobby p {
+  margin: 0;
+}
+main #hobby div.hobby-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #hobby div.hobby-one {
+  position: relative;
+  width: 35%;
+  margin: 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+main #hobby div.hobby-one div.overview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 1vw;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  background-color: #194775;
+}
+main #hobby div.hobby-one div.overview:hover {
+  opacity: 1;
+}
+main #hobby div.hobby-one img {
+  max-width: 100%;
+}
+main #contact {
+  background-color: #cce9fb;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+main #contact div.contact-one {
+  display: flex;
+  align-items: center;
+  margin: 50px 10vh;
+  font-size: 25px;
+}
+main #contact div.contact-one p {
+  margin-left: 5%;
+  width: 50%;
+}
+main #contact div.contact-one img {
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+}
+main #contact div.email {
+  width: 100%;
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+main #contact div.email p {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+  /* Navigation */
+  nav {
+    width: 100%;
+  }
+  nav .profile {
+    margin: 0;
+  }
+  div.profile p {
+    margin: 1vh;
+  }
+  ul.media-ul li {
+    width: 10vw !important;
+  }
+  ul.menu {
+    display: table;
+    width: 100%;
+  }
+  /* Content Main */
+  main {
+    width: 100%;
+  }
+  /* Home */
+  main #home div.home-one {
+    height: 200px;
+    margin-top: 70vh;
+    margin-bottom: 17vw;
+  }
+  main #home div.home-one p.p-first {
+    font-size: 12vw;
+  }
+  main #home div.home-one p.p-second {
+    font-size: 6vw;
+    inline-size: 90vw;
+    overflow-wrap: break-word;
+  }
+  /* About */
+  main #about div.about-one, main #about div.about-two {
+    margin: 10px;
+  }
+  main #about div.about-two {
+    display: block;
+    text-align: center;
+  }
+  main #about div.about-two .about-half {
+    width: 95%;
+  }
+  main #about div.about-two .about-half ul {
+    text-align: left;
+  }
+  main #about div.about-two img.about-half {
+    max-width: 100%;
+  }
+  /* Technology */
+  main #technology div.tech-container {
+    height: 100%;
+    display: block;
+  }
+  main #technology div.tech-container div.tech-one ul.tech-list li.item-box {
+    margin: 3em 2em;
+  }
+  main #technology div.tech-container div.tech-one ul.tech-list {
+    justify-content: center;
+    padding: 0;
+  }
+  /* Hobby */
+  main #hobby div.hobby-container {
+    display: block;
+  }
+  main #hobby div.hobby-one {
+    width: 95% !important;
+    margin: 10px 0 0 1%;
+  }
+  /* Contact */
+  main #contact div.contact-one {
+    display: block;
+    width: 93%;
+    margin: 10px;
+  }
+  main #contact div.contact-one img {
+    width: 100%;
+  }
+  main #contact div.contact-one p {
+    width: 100%;
+    font-size: 7vw;
+  }
+  main #contact div.email p {
+    font-size: 9vw;
+  }
+}
+@media (max-width: 1600px) {
+  main #hobby div.hobby-one {
+    width: 43%;
+  }
+}
+
+/*# sourceMappingURL=styleSCSS.css.map */

@@ -6,6 +6,7 @@ To create this website I used:
 - HTML
 - CSS
 - JavaScript
+- VanillaTilt
 I didn't use the Bootstrap library so it was more difficult.
 
 # link

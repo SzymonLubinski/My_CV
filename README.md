@@ -1,5 +1,5 @@
 # Personal Website
-This website gives information about me and my skills and is one hundred percent created by me.
+This website gives information about me and my skills.
 
 # Technologies
 To create this website I used:
